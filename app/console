@@ -4,8 +4,12 @@
 require_once __DIR__.'/AlboradaKernel.php';
 
 use Symfony\Bundle\FrameworkBundle\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+
+$input = new ArgvInput();
+$env = $input->getParameterOption(array('--env', '-e'), 'dev');
+$debug = $input->hasParameterOption(array('--debug', '-d'));
 
 $kernel = new AlboradaKernel('dev', true);
-
 $application = new Application($kernel);
 $application->run();
