@@ -16,10 +16,10 @@ twig.config:
     strict_variables: %kernel.debug%
 
 ## Doctrine Configuration
-#doctrine.dbal:
-#    dbname:   xxxxxxxx
-#    user:     xxxxxxxx
-#    password: ~
+doctrine.dbal:
+    dbname:   xxxxxxxx
+    user:     xxxxxxxx
+    password: ~
 #doctrine.orm: ~
 
 ## Swiftmailer Configuration
